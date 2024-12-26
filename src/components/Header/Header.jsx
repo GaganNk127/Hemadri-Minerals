@@ -14,31 +14,31 @@ export default function Header() {
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     {/* Logo */}
                     <Link to="/" className="flex items-center">
-                   
-                        <h1 className='text-2xl text-white'>Hemadri <span className='text-2xl text-orange-700'>Minerals</span></h1>
+                        <h1 className="text-2xl text-white">
+                            Hemadri <span className="text-2xl text-orange-700">Minerals</span>
+                        </h1>
                     </Link>
 
                     {/* Hamburger Menu Icon */}
-<button
-    onClick={toggleMenu}
-    className="lg:hidden text-gray-500 hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-300"
->
-    <svg
-        className="w-6 h-6 hover:bg-blue-500 p-1 rounded"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-    >
-        <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h16m-7 6h7"
-        />
-    </svg>
-</button>
-
+                    <button
+                        onClick={toggleMenu}
+                        className="lg:hidden text-gray-500 hover:text-black focus:outline-none focus:ring-2 focus:ring-blue-300"
+                    >
+                        <svg
+                            className="w-6 h-6 hover:bg-blue-500 p-1 rounded"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M4 6h16M4 12h16m-7 6h7"
+                            />
+                        </svg>
+                    </button>
 
                     {/* Navigation Links */}
                     <div
@@ -53,8 +53,8 @@ export default function Header() {
                                     to="/"
                                     className={({ isActive }) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${
-                                            isActive ? 'text-white' : 'text-orange-700'
-                                        } border-b border-black  hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0`
+                                            isActive ? 'text-white bg-blue-950' : 'text-orange-700'
+                                        } border-b border-black hover:bg-blue-950 hover:text-white lg:hover:bg-transparent lg:border-0 lg:p-0`
                                     }
                                 >
                                     Home
@@ -65,35 +65,23 @@ export default function Header() {
                                     to="/About"
                                     className={({ isActive }) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${
-                                            isActive ? 'text-white' : 'text-orange-700'
-                                        } border-b border-gray-100 hover:bg-white lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0`
+                                            isActive ? 'text-white bg-blue-950' : 'text-orange-700'
+                                        } border-b border-black hover:bg-blue-950 hover:text-white lg:hover:bg-transparent lg:border-0 lg:p-0`
                                     }
                                 >
                                     About
                                 </NavLink>
                             </li>
-                            {/* <li>
-                                <NavLink
-                                    to="/Gallery"
-                                    className={({ isActive }) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${
-                                            isActive ? 'text-white' : 'text-orange-700'
-                                        } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0`
-                                    }
-                                >
-                                    Gallery
-                                </NavLink>
-                            </li> */}
                             <li>
                                 <NavLink
                                     to="/Products"
                                     className={({ isActive }) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${
-                                            isActive ? 'text-white' : 'text-orange-700'
-                                        } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0`
+                                            isActive ? 'text-white bg-blue-950' : 'text-orange-700'
+                                        } border-b border-black hover:bg-blue-950 hover:text-white lg:hover:bg-transparent lg:border-0 lg:p-0`
                                     }
                                 >
-                                    Our producs
+                                    Our Products
                                 </NavLink>
                             </li>
                             <li>
@@ -101,8 +89,8 @@ export default function Header() {
                                     to="/Contact"
                                     className={({ isActive }) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${
-                                            isActive ? 'text-white' : 'text-orange-700'
-                                        } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0`
+                                            isActive ? 'text-white bg-blue-950' : 'text-orange-700'
+                                        } border-b border-black hover:bg-blue-950 hover:text-white lg:hover:bg-transparent lg:border-0 lg:p-0`
                                     }
                                 >
                                     Contact Us
